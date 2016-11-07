@@ -6,93 +6,37 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="assets/js/js.js"></script>
-	<title>Member Sign-In Form</title>
+	<title>Member Sign Up Form</title>
 </head>
 <body>
 
 <div class="container">
-	
-	<br>
+	<h1>Sign Up Here!</h1>
 
-	<!-- Jumbotron -->
-	<div class="jumbotron">
-		<h1 class="text-center">Member Sign-In</h1>
-	</div>
-
-	<div class="row">
-
-		<!-- Sign-Up Panel-->
-		<div class="col-lg-6">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Sign-In</h3>
-				</div>
-				<div class="panel-body">
-					
-					<!-- Sign-up Form (note the various input "types")-->
-					<form role="form">
-					  <div class="form-group">
-					    <label for="text">Name:</label>
-					    <input type="text" class="form-control" id="nameInput">
-					  </div>
-
-					  <div class="form-group">
-					    <label for="text">Phone Number:</label>
-					    <input type="phoneNumber" class="form-control" id="phoneNumberInput">
-					  </div>
-
-					  <div class="form-group">
-					    <label for="text">Email:</label>
-					    <input type="email" class="form-control" id="emailInput">
-					  </div>					  
-					  <button type="submit" class="btn btn-default" id="submitButton">Submit</button>
-					</form>
-				</div>
-			</div>
+	<form id="input">
+		<div id="name">
+			<label>Name: </label>
+				<input type="text" name="name" id="nameInput">
 		</div>
 
-		<!-- Most Recent Member Panel -->
-		<div class="col-lg-6">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3 class="panel-title">Most Recent Member</h3>
-				</div>
-				<div class="panel-body" id="recentMember">
-					<h2 id="nameOutput"></h2>
-					<h4 id="phoneNumberOutput"></h4>
-					<h4 id="emailOutput"></h4>					
-				</div>
-			</div>
+		<div id="phoneNumber">
+			<label>Phone Number: </label>
+				<input type="text" name="phoneNumber" id="phoneNumberInput">
 		</div>
-	</div>
+
+		<div id="email">
+			<label>Email: </label>
+				<input type="text" name="email" id="emailInput">
+		</div>
+			  <button class="btn btn-primary" id="submitButton">Submit</button>
+	</form>
+
+	<form id="output">
+		<div>Name: <span id="nameOutput"></span></div>
+		<div>Phone Number: <span id="phoneNumberOutput"></span></div>
+		<div>Email: <span id="emailOutput"></span></div>
+	</form>
 </div>
-
-
-<!-- <h1>Sign Up Here!</h1>
-
-<form id="input">
-	<div id="name">
-		<label>Name: </label>
-			<input type="text" name="name" id="nameInput">
-	</div>
-
-	<div id="phoneNumber">
-		<label>Phone Number: </label>
-			<input type="text" name="phoneNumber" id="phoneNumberInput">
-	</div>
-
-	<div id="email">
-		<label>Email: </label>
-			<input type="text" name="email" id="emailInput">
-	</div>
-		  <button class="btn btn-primary" id="submitButton">Submit</button>
-</form>
-
-<form id="output">
-	<div id="nameOutput"></div>
-	<div id="phoneNumberOutput"></div>
-	<div id="emailOutput"></div>
-</form> -->
 
 </body>
 </html>
